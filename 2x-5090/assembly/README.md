@@ -6,10 +6,26 @@ housings as individual parts only.
 
 | File | Parts | Envelope | Aluminium | Size |
 |:--|--:|:--|--:|--:|
-| `2x-box-ASSEMBLY.step` | 8 | 307.6 × 315.0 × 404.0 mm (12.1 × 12.4 × 15.9 in) | 4.96 kg | 11.7 MB |
+| `housing-2x-box--RTX5090-and-RTXPRO6000.step` | 8 | 307.6 × 315.0 × 404.0 mm (12.1 × 12.4 × 15.9 in) | 4.96 kg | 11.7 MB |
 
 The README for this build states **12.5 × 12.5 × 16 in**. Agreement is within
 0.4 in, the difference being panel thickness and where the outer covers sit.
+
+## One housing, two cards
+
+The filename says **RTX5090-and-RTXPRO6000** deliberately. Upstream publishes no
+`step_models` under `2x-6000/`; that build's README points here, so this CAD is
+the housing for both the 2× RTX 5090 and the 2× RTX PRO 6000.
+
+It works because the frame carries the cards on risers and brackets rather than
+wrapping their bodies — `GPU mount 1` is 15 × 85 × 28 mm and `GPU mount 2` is
+70 × 32 × 30.5 mm, brackets rather than shells. What differs between the two
+builds is power, not geometry: 575 W per 5090 against 600 W per RTX PRO 6000.
+
+Confirm clearances against the exact card before cutting metal; board partner
+models vary in length and cooler thickness more than reference cards do.
+
+## No placement faults
 
 **This housing has no placement faults.** Unlike the 4× cube — where
 `Part 2 - Back` is stored rotated 90° and 272 mm high, see

@@ -7,7 +7,7 @@ the archived 8× build.
 
 | File | Parts | Envelope | Size |
 |:--|--:|:--|--:|
-| `4x-cube-ASSEMBLY.step` | 15 | 517.4 × 509.9 × 616.5 mm (20.4 × 20.1 × 24.3 in) | 14.4 MB |
+| `housing-4x-cube--RTX5090-and-RTXPRO6000.step` | 15 | 517.4 × 509.9 × 616.5 mm (20.4 × 20.1 × 24.3 in) | 14.4 MB |
 
 The README for this build states **19.8 × 19.8 × 24.2 in**. Height matches; the
 extra width is panel thickness sitting proud of the frame.
@@ -17,6 +17,35 @@ extra width is panel thickness sitting proud of the frame.
 Each part file already carries its **assembly coordinates** rather than sitting
 at its own origin — `Part 1 - Bottom` at Z −466.6, `Part 4 - Middle` at Z −282.6,
 `Part 3 - Top` at Z +143.9. Merging them is a compound, not a fitting job.
+
+## Why one housing serves two different cards
+
+The filename says **RTX5090-and-RTXPRO6000** deliberately. Upstream publishes no
+`step_models` under `4x-6000/`; that build's README points here, so this one CAD
+set is the housing for both the 4× RTX 5090 and the 4× RTX PRO 6000.
+
+That is worth questioning, because the two cards are not the same object. It
+holds up because **the frame never touches the card body.** Three parts carry
+the GPUs:
+
+| Part | Size (mm) | Role |
+|:--|:--|:--|
+| `Part 7 - GPU Holder 1` | 50.2 × 50.2 × 370.0 | vertical post |
+| `Part 8 - GPU Holder 2` | 294.0 × 294.0 × 5.0 | upper plate |
+| `GPU mount` | 70.1 × 50.6 × 32.5 | bracket |
+
+The card is carried by its riser and bracket, not wrapped in a close-fitting
+shell. Clear height between `Part 4 - Middle` and `Part 3 - Top` is **420.5 mm**
+across four cards — a **~105 mm pitch** against a dual-slot card roughly 40 mm
+thick.
+
+So the open frame is what makes one CAD legitimately fit both. What differs
+between the two builds is **power and price**, not geometry the housing has to
+accommodate: 575 W per 5090 against 600 W per RTX PRO 6000.
+
+**Before cutting metal**, confirm the clearances against the exact card you are
+buying — board partner models vary in length and in cooler thickness far more
+than reference cards do.
 
 ## Two parts needed correcting
 
@@ -69,7 +98,7 @@ sits at the frame's top plane — enough to keep it inside the envelope, but it
 should not be treated as a correct placement.
 
 A corrected copy of the panel alone is at
-[`../step_models/Part 2 - Back - CORRECTED.step`](../step_models/Part%202%20-%20Back%20-%20CORRECTED.step).
+[`../step_models/Part 2 - Back--CORRECTED-placement.step`](../step_models/Part%202%20-%20Back--CORRECTED-placement.step).
 The original is untouched.
 
 ## Drawings
