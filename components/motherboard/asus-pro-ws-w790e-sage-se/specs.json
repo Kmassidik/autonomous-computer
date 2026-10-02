@@ -1,0 +1,53 @@
+{
+  "name": "ASUS Pro WS W790E-SAGE SE",
+  "category": "MOTHERBOARD",
+  "specs": {
+    "Form factor": "EEB \u2014 12 in \u00d7 13 in (30.5 cm \u00d7 33 cm)",
+    "Socket": "Intel LGA4677, Xeon W-3400 / W-2400",
+    "PCIe slots (W-3400)": "7 \u00d7 PCIe 5.0 \u2014 \u00d716/\u00d716/\u00d716/\u00d716/\u00d716/\u00d78/\u00d716",
+    "PCIe slots (W-2400)": "4 \u00d7 PCIe 5.0 \u2014 \u00d716/\u00d716/\u00d716/\u00d716",
+    "Memory slots": "8 DIMM, 8-channel, up to 2048 GB",
+    "Memory type": "DDR5 ECC Registered; 4800 base, 5200\u20136800 OC",
+    "PCB thickness used in CAD": "1.6 mm standard value"
+  },
+  "verified": {
+    "Form factor": true,
+    "Socket": true,
+    "PCIe slots (W-3400)": true,
+    "PCIe slots (W-2400)": true,
+    "Memory slots": true,
+    "Memory type": true,
+    "PCB thickness used in CAD": false
+  },
+  "sources": [
+    {
+      "name": "ASUS Pro WS W790E-SAGE SE tech spec",
+      "url": "https://www.asus.com/motherboards-components/motherboards/workstation/pro-ws-w790e-sage-se/techspec/",
+      "covers": "Form factor and dimensions, socket, PCIe slot configuration, memory slots, capacity, supported types and speeds"
+    }
+  ],
+  "cad_models": {
+    "model.step": {
+      "L": 330.0,
+      "W": 305.0,
+      "H": 13.1,
+      "vol": 303.9,
+      "faces": 86,
+      "kind": "envelope",
+      "note": "block geometry at true outer dimensions; for clearance checks"
+    },
+    "model-detailed.step": {
+      "L": 330.1,
+      "W": 305.0,
+      "H": 35.6,
+      "vol_cm3": 379.3,
+      "faces": 443,
+      "solids": 1,
+      "valid": true,
+      "closed_solid": true,
+      "kb": 498,
+      "kind": "detailed",
+      "note": "outer dimensions are sourced; internal features are representative, not traced from hardware"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "Intel Xeon w5-3423",
+  "category": "CPU",
+  "specs": {
+    "Socket": "Intel LGA4677 (Xeon W-3400 / W-2400)",
+    "Cores": "12",
+    "PCIe 5.0 lanes": "112 \u2014 enough for four cards at full \u00d716",
+    "Package dimensions": "77.5 mm \u00d7 56.5 mm unverified",
+    "Substrate thickness used in CAD": "1.1 mm estimate",
+    "IHS modelled as": "58 \u00d7 42 \u00d7 2.6 mm estimate",
+    "Stock cooler in BOM": "Heatsink 4677-2UAF8 (2U active)"
+  },
+  "verified": {
+    "Socket": true,
+    "Cores": true,
+    "PCIe 5.0 lanes": true,
+    "Package dimensions": false,
+    "Substrate thickness used in CAD": false,
+    "IHS modelled as": false,
+    "Stock cooler in BOM": true
+  },
+  "sources": [
+    {
+      "name": "Autonomous 4\u00d7-6000 build README",
+      "url": "https://github.com/autonomous-ai/autonomous-computer/blob/main/4x-6000/README.md",
+      "covers": "Core count, 112 PCIe 5.0 lanes, socket, stock cooler part number"
+    },
+    {
+      "name": "ASUS Pro WS W790E-SAGE SE tech spec",
+      "url": "https://www.asus.com/motherboards-components/motherboards/workstation/pro-ws-w790e-sage-se/techspec/",
+      "covers": "Socket LGA4677 compatibility"
+    }
+  ],
+  "cad_models": {
+    "model.step": {
+      "L": 77.5,
+      "W": 56.5,
+      "H": 3.7,
+      "vol": 11.2,
+      "faces": 11,
+      "kind": "envelope",
+      "note": "block geometry at true outer dimensions; for clearance checks"
+    },
+    "model-detailed.step": {
+      "L": 77.5,
+      "W": 56.5,
+      "H": 3.82,
+      "vol_cm3": 11.3,
+      "faces": 1771,
+      "solids": 1,
+      "valid": true,
+      "closed_solid": true,
+      "kb": 2019,
+      "kind": "detailed",
+      "note": "outer dimensions are sourced; internal features are representative, not traced from hardware"
+    }
+  }
+}

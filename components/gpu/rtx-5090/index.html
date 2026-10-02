@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>GeForce RTX 5090 — LUCA Components</title>
+<style>
+:root{--paper:#fff;--bg:#f4f4f2;--ink:#14161a;--mut:#6b7076;--line:#e2e2de;--accent:#c2410c;--chip:#f0efec}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;
+ --paper:#15181c;--bg:#0d0f11;--ink:#e9eaec;--mut:#9aa0a6;--line:#2a2e33;--accent:#fb923c;--chip:#1d2126}}
+:root[data-theme="dark"]{color-scheme:dark;--paper:#15181c;--bg:#0d0f11;--ink:#e9eaec;--mut:#9aa0a6;--line:#2a2e33;--accent:#fb923c;--chip:#1d2126}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);padding:0 16px;
+ font:15px/1.6 ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1060px;margin:0 auto;padding:30px 0 72px}
+header.top{display:flex;align-items:center;justify-content:space-between;gap:20px;
+ padding-bottom:18px;margin-bottom:28px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none}
+.brand svg{height:26px;width:auto;display:block}
+.brand small{color:var(--mut);font-size:.72rem;letter-spacing:.11em;text-transform:uppercase;
+ padding-left:12px;border-left:1px solid var(--line)}
+nav.crumb{font-size:.82rem;color:var(--mut)}
+nav.crumb a{color:var(--mut);text-decoration:none;border-bottom:1px solid var(--line)}
+nav.crumb a:hover{color:var(--accent);border-color:var(--accent)}
+h1{font-size:2rem;letter-spacing:-.025em;margin:0 0 6px;line-height:1.14}
+.sub{color:var(--mut);margin:0 0 26px;font-size:1rem}
+.cat{display:inline-block;font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;
+ color:var(--accent);font-weight:700;margin-bottom:10px}
+.hero{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 30px}
+.hero div{flex:1 1 150px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.hero span{display:block;font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;color:var(--mut);margin-bottom:5px}
+.hero b{font-size:1.48rem;font-weight:650;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.hero b em{font-style:normal;font-size:.8rem;color:var(--mut);font-weight:500;margin-left:3px}
+section{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:22px 24px;margin:0 0 20px}
+h2{font-size:.76rem;letter-spacing:.11em;text-transform:uppercase;color:var(--mut);
+ margin:0 0 16px;padding-bottom:9px;border-bottom:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+td,th{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{width:38%;font-weight:500;color:var(--mut)}
+td{font-variant-numeric:tabular-nums}
+td b{font-weight:650}
+.ok{color:var(--accent);font-weight:700}
+.chip{display:inline-block;background:var(--chip);border:1px solid var(--line);border-radius:5px;
+ padding:1px 7px;font-size:.73rem;color:var(--mut);font-variant-numeric:tabular-nums}
+code{background:var(--chip);border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:.85em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+a.card{display:block;background:var(--paper);border:1px solid var(--line);border-radius:11px;
+ padding:17px 18px;text-decoration:none;color:var(--ink);transition:border-color .13s,transform .13s}
+a.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+a.card strong{display:block;font-size:1rem;margin:5px 0 8px;letter-spacing:-.01em}
+a.card p{margin:0;color:var(--mut);font-size:.83rem;line-height:1.5}
+footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:.8rem}
+.note{border-left:3px solid var(--accent);padding:3px 0 3px 14px;margin:16px 0;color:var(--mut);font-size:.88rem}
+@media(max-width:620px){h1{font-size:1.55rem}.hero b{font-size:1.25rem}th{width:46%}}
+</style></head><body><div class="wrap">
+<header class="top"><a class="brand" href="../../index.html">
+<svg viewBox="0 0 200 48" aria-label="LUCA">  <g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="miter">
+    <path d="M6 6 V42 H30"/>
+    <path d="M6 24 H18"/>
+  </g>
+  <g fill="currentColor" font-family="ui-sans-serif,system-ui,-apple-system,'Helvetica Neue',sans-serif"
+     font-size="30" font-weight="600" letter-spacing="7">
+    <text x="48" y="35">LUCA</text>
+  </g>
+</svg><small>Component Library</small></a>
+<nav class="crumb"><a href="../../index.html">Components</a> / <a href="../../index.html#gpu">Gpu</a> / GeForce RTX 5090</nav></header>
+<span class="cat">GPU</span><h1>GeForce RTX 5090</h1>
+<p class="sub">Founders Edition — the consumer flagship, and the cheapest VRAM per dollar of the three.</p>
+<div class="hero"><div><span>Length</span><b>304<em>mm</em></b></div><div><span>Height</span><b>137<em>mm</em></b></div><div><span>Slots</span><b>2<em></em></b></div><div><span>TGP</span><b>575<em>W</em></b></div><div><span>Memory</span><b>32<em>GB</em></b></div></div>
+<section><h2>Specifications</h2><table><tr><th>Form factor</th><td>304 mm × 137 mm, 2-slot</td></tr><tr><th>Extra depth for cables</th><td>1.4 in (35.6 mm) — <span class="chip">keep-out</span></td></tr><tr><th>Memory</th><td>32 GB GDDR7</td></tr><tr><th>Memory interface</th><td>512-bit</td></tr><tr><th>Total graphics power</th><td><b>575 W</b></td></tr><tr><th>Required system power</th><td>1000 W</td></tr><tr><th>Power connector</th><td>4× PCIe 8-pin (adapter) or 1× 600 W PCIe Gen 5</td></tr><tr><th>Slot pitch used in CAD</th><td>20.32 mm (0.8 in) × 2 = 40.64 mm</td></tr></table></section>
+<section><h2>CAD models</h2>
+<table>
+<tr><th><code>model.step</code> — envelope</th><td>Block geometry at true outer dimensions. Small, fast, and all you need to answer <em>does it fit</em>.</td></tr>
+<tr><th><code>model-detailed.step</code> — detailed</th><td><b>322.0 × 40.64 × 153.0 mm</b> · 1633 faces · 509.8 cm³ · 2401 KB</td></tr>
+<tr><th>Solid integrity</th><td><span class="ok">valid, closed manifold</span> — boolean interference tests will work against it</td></tr>
+</table>
+<p class="note">Outer dimensions come from the sources below and are exact. <b>Internal features are
+representative</b> — fins, blades, pads and slots are built to how these parts are generally made, not
+traced from measured hardware. Good for fit and layout; not a substitute for a vendor CAD model if you
+need exact internal clearances.</p>
+<p class="note">To check fit: open the housing assembly in FreeCAD, then <b>File → Import</b> this
+<code>model-detailed.step</code>.</p></section>
+<section><h2>Sources</h2><table><tr><th><a href="https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/">NVIDIA GeForce RTX 5090 product page</a></th><td>Length, width, slot count, TGP, memory, power connectors</td></tr></table></section>
+<footer>Dimensions from manufacturer specifications; see <b>sources.md</b> in each folder.
+CAD generated with FreeCAD 1.1.4 — <code>model.step</code>. Figures marked
+<span class="chip">unverified</span> are standards or estimates, not vendor-published.</footer>
+</div></body></html>

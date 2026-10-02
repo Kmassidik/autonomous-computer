@@ -1,0 +1,49 @@
+{
+  "name": "GeForce RTX 3060 Ti",
+  "category": "GPU",
+  "specs": {
+    "Form factor": "9.5 in (242 mm) \u00d7 4.4 in (112 mm), 2-slot",
+    "Memory": "8 GB GDDR6 or GDDR6X",
+    "Memory interface": "256-bit",
+    "Total graphics power": "200 W",
+    "Slot pitch used in CAD": "20.32 mm \u00d7 2 = 40.64 mm"
+  },
+  "verified": {
+    "Form factor": true,
+    "Memory": true,
+    "Memory interface": true,
+    "Total graphics power": true,
+    "Slot pitch used in CAD": false
+  },
+  "sources": [
+    {
+      "name": "NVIDIA RTX 3060 / 3060 Ti product page",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3060-3060ti/",
+      "covers": "Length, width, slot count, TGP, memory, bus width"
+    }
+  ],
+  "cad_models": {
+    "model.step": {
+      "L": 260.0,
+      "W": 40.6,
+      "H": 135.6,
+      "vol": 1114.7,
+      "faces": 16,
+      "kind": "envelope",
+      "note": "block geometry at true outer dimensions; for clearance checks"
+    },
+    "model-detailed.step": {
+      "L": 260.0,
+      "W": 40.64,
+      "H": 128.0,
+      "vol_cm3": 345.2,
+      "faces": 1274,
+      "solids": 1,
+      "valid": true,
+      "closed_solid": true,
+      "kb": 1861,
+      "kind": "detailed",
+      "note": "outer dimensions are sourced; internal features are representative, not traced from hardware"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "RTX PRO 6000 Blackwell",
+  "category": "GPU",
+  "specs": {
+    "Form factor": "12.0 in L \u00d7 5.4 in H (304.8 \u00d7 137.2 mm), dual slot",
+    "Memory": "96 GB GDDR7 with ECC",
+    "Memory bandwidth": "1,792 GB/s",
+    "Max power consumption": "600 W",
+    "Power connector": "1\u00d7 PCIe CEM5 16-pin",
+    "Display outputs": "4\u00d7 DisplayPort 2.1",
+    "Cooling": "Double flow-through",
+    "Variants to avoid": "Server Edition is passively cooled; Max-Q is a 300 W part"
+  },
+  "verified": {
+    "Form factor": true,
+    "Memory": true,
+    "Memory bandwidth": true,
+    "Max power consumption": true,
+    "Power connector": true,
+    "Display outputs": true,
+    "Cooling": true,
+    "Variants to avoid": true
+  },
+  "sources": [
+    {
+      "name": "NVIDIA RTX PRO 6000 product page",
+      "url": "https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-6000/",
+      "covers": "Dimensions, power, memory, bandwidth, connectors, cooling"
+    },
+    {
+      "name": "PNY RTX PRO 6000 Blackwell WS",
+      "url": "https://www.pny.com/nvidia-rtx-pro-6000-blackwell-ws",
+      "covers": "Confirms 5.4 in \u00d7 12 in dual slot; power connector type"
+    }
+  ],
+  "cad_models": {
+    "model.step": {
+      "L": 322.8,
+      "W": 40.6,
+      "H": 162.0,
+      "vol": 1713.8,
+      "faces": 16,
+      "kind": "envelope",
+      "note": "block geometry at true outer dimensions; for clearance checks"
+    },
+    "model-detailed.step": {
+      "L": 322.8,
+      "W": 40.64,
+      "H": 153.2,
+      "vol_cm3": 511.7,
+      "faces": 1616,
+      "solids": 1,
+      "valid": true,
+      "closed_solid": true,
+      "kb": 2390,
+      "kind": "detailed",
+      "note": "outer dimensions are sourced; internal features are representative, not traced from hardware"
+    }
+  }
+}

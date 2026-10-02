@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" role="img" aria-label="LUCA">
+  <g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="miter">
+    <path d="M6 6 V42 H30"/>
+    <path d="M6 24 H18"/>
+  </g>
+  <g fill="currentColor" font-family="ui-sans-serif,system-ui,-apple-system,'Helvetica Neue',sans-serif"
+     font-size="30" font-weight="600" letter-spacing="7">
+    <text x="48" y="35">LUCA</text>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+{
+  "name": "DDR5-4800 ECC RDIMM",
+  "category": "MEMORY",
+  "specs": {
+    "Module length": "133.35 mm (5.25 in)",
+    "Module height": "31.25 mm nominal, 31.40 mm max",
+    "Pin count": "288",
+    "JEDEC standard": "MO-329J",
+    "PCB thickness used in CAD": "1.2 mm standard value",
+    "Type required": "ECC Registered (RDIMM) \u2014 not UDIMM, not on-die ECC",
+    "Board support": "8 DIMM slots, 8-channel, up to 2048 GB",
+    "Speeds supported": "4800 base; 5200\u20136800 listed as OC"
+  },
+  "verified": {
+    "Module length": true,
+    "Module height": true,
+    "Pin count": true,
+    "JEDEC standard": true,
+    "PCB thickness used in CAD": false,
+    "Type required": true,
+    "Board support": true,
+    "Speeds supported": true
+  },
+  "sources": [
+    {
+      "name": "Wikipedia \u2014 DIMM (JEDEC figures)",
+      "url": "https://en.wikipedia.org/wiki/DIMM",
+      "covers": "288-pin, 31.25 mm nominal height, 133.35 mm length, standard MO-329J"
+    },
+    {
+      "name": "ASUS Pro WS W790E-SAGE SE tech spec",
+      "url": "https://www.asus.com/motherboards-components/motherboards/workstation/pro-ws-w790e-sage-se/techspec/",
+      "covers": "8 DIMM slots, 2048 GB max, 8-channel, DDR5 ECC Registered, speed list"
+    }
+  ],
+  "cad_models": {
+    "model.step": {
+      "L": 133.3,
+      "W": 3.4,
+      "H": 31.2,
+      "vol": 7.9,
+      "faces": 114,
+      "kind": "envelope",
+      "note": "block geometry at true outer dimensions; for clearance checks"
+    },
+    "model-detailed.step": {
+      "L": 133.35,
+      "W": 3.3,
+      "H": 31.25,
+      "vol_cm3": 7.4,
+      "faces": 813,
+      "solids": 1,
+      "valid": true,
+      "closed_solid": true,
+      "kb": 910,
+      "kind": "detailed",
+      "note": "outer dimensions are sourced; internal features are representative, not traced from hardware"
+    }
+  }
+}

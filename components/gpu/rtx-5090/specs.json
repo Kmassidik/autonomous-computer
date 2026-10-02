@@ -1,0 +1,55 @@
+{
+  "name": "GeForce RTX 5090",
+  "category": "GPU",
+  "specs": {
+    "Form factor": "304 mm \u00d7 137 mm, 2-slot",
+    "Extra depth for cables": "1.4 in (35.6 mm) \u2014 keep-out",
+    "Memory": "32 GB GDDR7",
+    "Memory interface": "512-bit",
+    "Total graphics power": "575 W",
+    "Required system power": "1000 W",
+    "Power connector": "4\u00d7 PCIe 8-pin (adapter) or 1\u00d7 600 W PCIe Gen 5",
+    "Slot pitch used in CAD": "20.32 mm (0.8 in) \u00d7 2 = 40.64 mm"
+  },
+  "verified": {
+    "Form factor": true,
+    "Extra depth for cables": true,
+    "Memory": true,
+    "Memory interface": true,
+    "Total graphics power": true,
+    "Required system power": true,
+    "Power connector": true,
+    "Slot pitch used in CAD": false
+  },
+  "sources": [
+    {
+      "name": "NVIDIA GeForce RTX 5090 product page",
+      "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/",
+      "covers": "Length, width, slot count, TGP, memory, power connectors"
+    }
+  ],
+  "cad_models": {
+    "model.step": {
+      "L": 322.0,
+      "W": 40.6,
+      "H": 161.8,
+      "vol": 1706.9,
+      "faces": 16,
+      "kind": "envelope",
+      "note": "block geometry at true outer dimensions; for clearance checks"
+    },
+    "model-detailed.step": {
+      "L": 322.0,
+      "W": 40.64,
+      "H": 153.0,
+      "vol_cm3": 509.8,
+      "faces": 1633,
+      "solids": 1,
+      "valid": true,
+      "closed_solid": true,
+      "kb": 2401,
+      "kind": "detailed",
+      "note": "outer dimensions are sourced; internal features are representative, not traced from hardware"
+    }
+  }
+}
